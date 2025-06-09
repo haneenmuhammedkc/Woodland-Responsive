@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     margin: 0px;
     font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -236,13 +240,13 @@ body{
 }
 
 .body-5{
-    width: 99%;
+    width: 100%;
     height: 80vh;
 }
 
 .min-1{
     width: 100%;
-    height: 80%;
+    height: 99%;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 0.8%;
@@ -347,6 +351,7 @@ body{
     width: 145px;
     height: 40px;
     color: #fff;
+    border: solid;
     background-color: transparent;
     border-color: #fff;
 }
@@ -354,6 +359,7 @@ body{
     width: 100%;
     height: 10vh;
     margin-top: 4%;
+    padding-bottom: 2%;
 }
 
 #text-7{
@@ -368,15 +374,16 @@ body{
 
 .body-10{
     width: 100%;
-    height: 42vh;
+    height: auto;
     display: flex;
     gap: 1%;
-
+    padding-bottom: 1%;
 }
 
 .img-1{
     width: 19%;
-    height: 40vh;
+    height: auto;
+    aspect-ratio: 1/1;
     margin: 0px;
 }
 
@@ -607,8 +614,12 @@ body{
     #pic-1{
         display: none;
     }
+    .body-1{
+        height: 420px;
+    }
     #pic-6{
         display: block;
+        height: 400px;
     }
     #pic-5{
         display: block;
@@ -679,10 +690,7 @@ body{
     }
     .body-10{
         width: 100%;
-        height: 27vh;
-    }
-    .img-1{
-        height: 25vh;
+        height: auto;
     }
     .body-4{
         height: 60vh;
@@ -717,5 +725,70 @@ body{
     }
     .input{
         width: 170%;
+    }
+}
+
+@media(max-width:400px){
+    .part-1{
+        height: 33%;
+    }
+    .part-2{
+        height: 33%;
+    }
+    .part-3{
+        height: 33%;
+    }
+    .body-5{
+        height: 93vh;
+    }
+    .body-6{
+        height: 30vh;
+    }
+    .body-8{
+        height: 160vh;
+    }
+    .slips-5{
+        height: 5vh;
+    }
+    .pic-7{
+        height: 38vh;
+    }
+    .min-1{
+        height: 70%;
+    }
+    .body-3{
+        height: 30vh;
+    }
+    .pic-2{
+        height: 35vh;
+    }
+    .inp-1{
+        width: 230px;
+    }
+    .foot-last{
+        height: auto;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+    .main-head-1{
+        width: 16%;
+    }
+    .slips-2{
+        padding-left: 2%;
+    }
+    .slips-3{
+        padding-left: 2%;
+    }
+    .slips-4{
+        padding-left: 2%;
+    }
+    .slips-5{
+        padding-left: 2%;
+    }
+    .body-9{
+        height: 12vh;
+    }
+    #text-8{
+        text-align: center;
     }
 }
